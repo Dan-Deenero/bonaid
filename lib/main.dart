@@ -14,9 +14,7 @@ class BonaidApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body:Column(
-        children: [
-          Container(
+      body: Container(
                 width: double.infinity,
                 padding: EdgeInsets.symmetric(horizontal: 20),
                 decoration:  BoxDecoration(
@@ -65,6 +63,7 @@ class BonaidApp extends StatelessWidget {
                           ),
                           SizedBox(height: 10),
                           Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                                Icon(
                                 Icons.person,
@@ -93,6 +92,7 @@ class BonaidApp extends StatelessWidget {
                           ),
                           SizedBox(height: 10),
                           Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               Icon(
                                 Icons.mail,
@@ -121,6 +121,7 @@ class BonaidApp extends StatelessWidget {
                           ),
                           SizedBox(height: 10),
                           Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               Icon(
                                 Icons.calendar_month,
@@ -149,6 +150,7 @@ class BonaidApp extends StatelessWidget {
                           ),
                           SizedBox(height: 10),
                           Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               Icon(
                                 Icons.key,
@@ -198,8 +200,6 @@ class BonaidApp extends StatelessWidget {
                   ],
                 ),
               ),
-        ],
-      ),
     );
   }
 }
